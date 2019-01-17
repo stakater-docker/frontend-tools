@@ -1,7 +1,8 @@
 FROM node:9.4.0
 
 RUN echo "deb http://ftp.us.debian.org/debian testing main contrib non-free" >> /etc/apt/sources.list \
-     &&      apt-get update              \
+     &&      apt-get update \
+     &&      apt-get remove binutils \
      &&      apt-get install -y git xvfb fluxbox x11vnc \
      &&      apt-get clean all
 
