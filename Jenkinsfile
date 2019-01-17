@@ -3,5 +3,4 @@
 
 pushDockerImage {
     dockerRepositoryURL = "docker.io"
-    imagePrefix = "9.4.0"
 }
