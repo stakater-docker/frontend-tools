@@ -1,4 +1,4 @@
-FROM node:9.4.0
+FROM node:8.12.0
 
 RUN echo "deb http://ftp.us.debian.org/debian testing main contrib non-free" >> /etc/apt/sources.list \
      &&      apt-get update \
