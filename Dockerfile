@@ -3,7 +3,7 @@ FROM node:8.12.0
 RUN echo "deb http://ftp.us.debian.org/debian testing main contrib non-free" >> /etc/apt/sources.list \
      &&      apt-get update \
      &&      apt-get remove -y binutils \
-     &&      apt-get install -y git xvfb fluxbox x11vnc \
+     &&      apt-get install -y git xvfb fluxbox x11vnc libgtk2.0-0 \
      &&      apt-get clean all
 
 RUN mkdir -p /usr/src/app
